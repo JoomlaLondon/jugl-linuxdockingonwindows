@@ -29,9 +29,15 @@ https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
 
 #### Installer is at:
 
-```
+`
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+`
+
+Set WSL 2 as your default version
+
+#### Open PowerShell as Administrator and run:
+
 ```
-
-
+wsl --set-default-version 2
+```
 
