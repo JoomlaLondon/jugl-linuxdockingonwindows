@@ -19,13 +19,12 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 Restart your machine at this point to complete the WSL install and update to WSL 2.
 
+
 Install the linux kernel package required to update the WSL version to WSL 2.
 
 #### Details of kernel are in below link:
 
-```
 https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
-```
 
 #### Installer is at:
 
