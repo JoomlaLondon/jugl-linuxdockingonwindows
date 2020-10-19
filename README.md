@@ -46,7 +46,7 @@ Open the Microsoft Store and select your favorite Linux distribution.
 
 Some of the popular one’s are below:
 
-...Debian
+...Debian...
 ...UbuntuSUSE
 ...Linux Enterprise Server
 ...KaliLinux
