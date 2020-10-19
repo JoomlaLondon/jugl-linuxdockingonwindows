@@ -72,9 +72,11 @@ wsl -l -v
 wsl --set-version <distribution name> <versionNumber>
 ```
 
-#### Installing Docker Desktop
+##### Installing Docker Desktop
 
-Download Docker Desktop Stable 2.3.0.2 or a later release.
+#### Download Docker Desktop Stable 2.3.0.2 or a later release:
+
+https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
 Make sure to select below during installation:
 
