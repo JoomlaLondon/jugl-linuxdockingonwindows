@@ -90,4 +90,38 @@ That’s it.
 
 You have now installed docker on WSL 2.
 
-Verify it by running it in Ubuntu/Linux terminal.
+In a PowerShell window, verify docker is running:
+
+```
+docker ps
+docker run hello-world
+```
+
+Change Image Location of Docker using WSL
+
+Tried several things at first, like using "root-data" param in daemon config, none worked.  
+The only thing that did work for me was this:
+Open your command prompt:
+
+wsl --list -v
+
+You should be able to see, make sure the STATE for both is Stopped.
+```
+  NAME                   STATE           VERSION
+* docker-desktop         Stopped         2
+  docker-desktop-data    Stopped         2
+```
+
+Export docker-desktop-data into a file:
+```
+wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"
+```
+Unregister docker-desktop-data from wsl, note that after this, your ext4.vhdx file would automatically be removed:
+```
+wsl --unregister docker-desktop-data
+```
+Import the docker-desktop-data back to wsl, but now the ext4.vhdx would reside in different drive/directory:
+```
+wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker-desktop-data.tar" --version 2
+```
+
