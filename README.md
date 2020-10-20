@@ -131,4 +131,4 @@ wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker
 CREDITs: 
 @avinashsingh post on Hackernoon.com
 
-[StackOverflow]:https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-wsl2-with-windows-10-h
+[StackOverflow](https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-wsl2-with-windows-10-h)
