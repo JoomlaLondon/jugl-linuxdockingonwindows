@@ -46,13 +46,13 @@ Open the Microsoft Store and select your favorite Linux distribution.
 
 Some of the popular one’s are below:
 
-&ensp;&ensp;Debian
+   Debian
 
-&ensp;&ensp;UbuntuSUSE
+   UbuntuSUSE
 
-&ensp;&ensp;Linux Enterprise Server
+   Linux Enterprise Server
 
-&ensp;&ensp;KaliLinux
+   KaliLinux
 
 
 The first time you launch a newly installed Linux distribution, a console window will open and you’ll be asked to wait for a minute or two for files to de-compress and be stored on your PC. All future launches should take less than a second.
