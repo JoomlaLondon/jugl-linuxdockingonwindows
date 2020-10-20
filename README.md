@@ -78,7 +78,7 @@ wsl --set-version <distribution name> <versionNumber>
 
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
-Make sure to select below during installation:
+Accept the default settings during install
 
 
 
