@@ -1,5 +1,5 @@
 JUGL Workshop on how to setup Docker on Windows to run native linux containers
-CREDIT: @avinashsingh post on Hackernoon.com
+
 
 ## Enable WSL 2 feature on Windows.
 
@@ -125,3 +125,10 @@ Import the docker-desktop-data back to wsl, but now the ext4.vhdx would reside i
 wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker-desktop-data.tar" --version 2
 ```
 
+
+
+
+CREDITs: 
+@avinashsingh post on Hackernoon.com
+
+[StackOverflow]:https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-wsl2-with-windows-10-h
