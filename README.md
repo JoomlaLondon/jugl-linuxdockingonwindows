@@ -8,6 +8,7 @@ JUGL Workshop on how to setup Docker on Windows to run native linux containers
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
+![PowerShell Output](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/master/src/common/images/snip1.png "PowerShell Output")
 
 Enable the ‘Virtual Machine Platform’ optional component
 
