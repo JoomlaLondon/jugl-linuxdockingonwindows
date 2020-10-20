@@ -17,9 +17,9 @@ Enable the ‘Virtual Machine Platform’ optional component
 ```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
+![PowerShell Output 2](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/main/images/snip2.png "PowerShell Output 2")
 
 #### Restart your machine at this point to complete the WSL install and update to WSL 2.
-
 
 Install the linux kernel package required to update the WSL version to WSL 2.
 
@@ -66,12 +66,14 @@ Store this somewhere other than a postit note.
 ```
 wsl -l -v
 ```
+![PowerShell Output 3](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/main/images/snip5.png "PowerShell Output 3")
 
 ##### Set the distribution to use WSL 2:
 
 ```
 wsl --set-version <distribution name> <versionNumber>
 ```
+![PowerShell Output 4](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/main/images/snip6.png "PowerShell Output 4")
 
 ##### Installing Docker Desktop
 
@@ -80,12 +82,10 @@ wsl --set-version <distribution name> <versionNumber>
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
 Accept the default settings during install
-
-
+![PowerShell Output](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/main/images/dockerWSLsetting.png "PowerShell Output")
 
 Run Docker Desktop.
-
-
+Set Docker on WSL to also allow the Distro you installed.
 
 That’s it.
 
@@ -98,14 +98,14 @@ docker ps
 docker run hello-world
 ```
 
-Change Image Location of Docker using WSL
+#### NOTE: Changing Image Location of Docker using WSL
 
-Tried several things at first, like using "root-data" param in daemon config, none worked.  
+I tried several things at first, like using "root-data" param in daemon config, none worked.  
 The only thing that did work for me was this:
 Open your command prompt:
-
+```
 wsl --list -v
-
+```
 You should be able to see, make sure the STATE for both is Stopped.
 ```
   NAME                   STATE           VERSION
@@ -125,7 +125,7 @@ Import the docker-desktop-data back to wsl, but now the ext4.vhdx would reside i
 ```
 wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker-desktop-data.tar" --version 2
 ```
-
+Re-start docker and should show any images you download but from the new location.
 
 
 
