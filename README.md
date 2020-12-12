@@ -80,6 +80,8 @@ wsl --set-version <distribution name> <versionNumber>
 
 ##### Installing Docker Desktop
 
+At this point we recommend a reboot just to get everything in check.
+
 #### Download Docker Desktop Stable 2.3.0.2 or a later release:
 
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
@@ -101,7 +103,9 @@ docker ps
 docker run hello-world
 ```
 
-#### NOTE: Changing Image Location of Docker using WSL
+### Advanced Tip
+
+#### Changing the default image location of Docker using WSL
 
 I tried several things at first, like using "root-data" param in daemon config, none worked.  
 The only thing that did work for me was this:
