@@ -102,6 +102,8 @@ In a PowerShell window, verify docker is running:
 docker ps
 docker run hello-world
 ```
+If you don't see this but didn't see any errors as you went through the process, try restarting the machine, double check for Virtualisation and then reinstall the Linux dist and reboot and then try to reinstall Docker...  If that doesn't work create an issue at github.com/joomlaLondon/jugl-linuxdockingonwindows and I'll do my best to help.
+
 
 ### Advanced Tip
 
