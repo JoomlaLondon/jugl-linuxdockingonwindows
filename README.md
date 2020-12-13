@@ -113,9 +113,9 @@ If you don't see this but didn't see any errors as you went through the process,
 
 ### Advanced Tip
 
-#### Changing the default image location of Docker using WSL
+#### Optional: Changing the default image location of Docker using WSL
 
-I tried several things at first, like using "root-data" param in daemon config, none worked.  
+I wanted to store the images of containers somewhere other than my system drive(SSD).  I tried several things, like using the "root-data" param in the Docker daemon config, none worked.  
 The only thing that did work for me was this:
 
 In Powershell(as Administrator)
@@ -128,11 +128,14 @@ You should see something like:
 * docker-desktop         Stopped         2
   docker-desktop-data    Stopped         2
 ```
-Make sure the STATE for both is Stopped.
+Make sure the STATE for both is Stopped, if not, try this:
+
+In Powershell(as Administrator)
 ```
-docker stop docker-desktop-data
-docker stop docker-desktop
+wsl -t <DistributionName>
 ```
+*do for both distributions*
+
 Export docker-desktop-data into a file:
 ```
 wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"
