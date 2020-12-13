@@ -49,7 +49,7 @@ wsl --set-default-version 2
 
 #### Install your Linux distribution of choice
 
-Open the Microsoft Store and select your favorite Linux distribution.
+With our Linux kernel now availabl we can grab our distrubution to run on it.  We'll get this from the Microsoft Store.  Search for the Store and find and select your favorite Linux distribution.
 
 Some of the popular one’s are below:
 
