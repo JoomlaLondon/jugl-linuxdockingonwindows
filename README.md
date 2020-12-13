@@ -34,6 +34,8 @@ https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
+Use these details in the command below...
+
 
 Set WSL 2 as your default version
 
