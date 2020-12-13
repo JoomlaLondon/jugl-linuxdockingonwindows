@@ -53,13 +53,13 @@ With our Linux kernel now availabl we can grab our distrubution to run on it.  W
 
 Some of the popular one’s are below:
 
-   Debian
+&nbsp;&nbsp;&nbsp;Debian
 
-   UbuntuSUSE
+&nbsp;&nbsp;&nbsp;UbuntuSUSE
 
-   Linux Enterprise Server
+&nbsp;&nbsp;&nbsp;Linux Enterprise Server
 
-   KaliLinux
+&nbsp;&nbsp;&nbsp;KaliLinux
 
 
 The first time you launch a newly installed Linux distribution, a console window will open and you’ll be asked to wait for a minute or two, for files to de-compress and be stored on your PC. All future launches should be much faster.
