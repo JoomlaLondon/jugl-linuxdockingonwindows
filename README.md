@@ -69,6 +69,7 @@ Store this somewhere other than a postit note.
 
 ##### Check for the list of linux distributions:
 
+In Powershell(As Administrator):
 ```
 wsl -l -v
 ```
@@ -76,6 +77,7 @@ wsl -l -v
 
 ##### Set the distribution to use WSL 2:
 
+In Powershell(As Administrator):
 ```
 wsl --set-version <distribution name> <versionNumber>
 ```
@@ -89,17 +91,18 @@ At this point we recommend a reboot just to get everything in check.
 
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
-Accept the default settings during install
+Accept the default settings during the install.
+
+Once complete, run Docker Desktop.
+
+Set Docker on WSL to also allow the Distro you installed (see below).
 ![PowerShell Output](https://github.com/JoomlaLondon/jugl-linuxdockingonwindows/raw/main/images/dockerWSLsetting.png "PowerShell Output")
 
-Run Docker Desktop.
-Set Docker on WSL to also allow the Distro you installed.
+That should be it.
 
-That’s it.
+You have now installed Docker on WSL 2.
 
-You have now installed docker on WSL 2.
-
-In a PowerShell window, verify docker is running:
+In PowerShell(As Administrator), verify docker is running:
 
 ```
 docker ps
