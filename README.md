@@ -117,17 +117,22 @@ If you don't see this but didn't see any errors as you went through the process,
 
 I tried several things at first, like using "root-data" param in daemon config, none worked.  
 The only thing that did work for me was this:
-Open your command prompt:
+
+In Powershell(as Administrator)
 ```
 wsl --list -v
 ```
-You should be able to see, make sure the STATE for both is Stopped.
+You should see something like:
 ```
   NAME                   STATE           VERSION
 * docker-desktop         Stopped         2
   docker-desktop-data    Stopped         2
 ```
-
+Make sure the STATE for both is Stopped.
+```
+docker stop docker-desktop-data
+docker stop docker-desktop
+```
 Export docker-desktop-data into a file:
 ```
 wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"
