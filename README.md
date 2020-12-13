@@ -85,7 +85,7 @@ wsl --set-version <distribution name> <versionNumber>
 
 ##### Installing Docker Desktop
 
-At this point we recommend a reboot just to get everything in check.
+At this point we recommend a reboot just to help everything settle in.
 
 #### Download Docker Desktop Stable 2.3.0.2 or a later release:
 
