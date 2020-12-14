@@ -1,6 +1,6 @@
 # JUGL Workshop on how to setup Docker on Windows, to run native linux containers.
 
-*NOTE:* Before you start, it is important to prepare the hardware you're working on.  To enable the Windows Subsystem Linux , you need to enable Virtualisation in the bios of your laptop or desktop.  Each bios is different especially between Amd  and Intel systems but you should look for something relatiing to Virtualisation.  The setting is usually found in  Advanced/CPU settings page.  In one system we found it was disguised as "SVM Mode".  Maybe check the documentation of your motherboard/laptop if you have it.  You won't be able to get things running without it.
+*NOTE:* Before you start, it is important to prepare the hardware you're working on.  To enable the Windows Subsystem Linux , you need to enable Virtualisation in the bios of your laptop or desktop.  Each bios is different especially between Amd  and Intel systems but you should look for something relatiing to Virtualisation.  The setting is usually found in  Advanced/CPU settings page.  In one AMD system we found it was labelled as "SVM Mode".  Maybe check the documentation of your motherboard/laptop if you have it.  You won't be able to get things running without it.
 
 Once you have it enabled, you should be able to confirm this in the Performance Tab of the Task manager in Windows.  Look for confirmation of Virtualisation enabled.
 We will be using Powershell for most of the command line commands.  You may not have used this before but it should come pre-installed with windows.
